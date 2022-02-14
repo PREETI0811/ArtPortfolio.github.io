@@ -1,0 +1,14 @@
+<div class="header-container">
+    
+    <h1 >ART-PORTFOLIO</h1>
+    <div class="menu-icon" (click)="displayMenu()">
+        <fa-icon [icon]="faBars"></fa-icon>
+    </div>
+    <div class="menu-icon" class="overlay-icon" (click)="displayOverlay()">
+        K
+    </div>
+
+</div>
+<app-menu *ngIf="isDisplayModal" (menuOptionChanged)=changeMenuOption($event)></app-menu>
+
+<app-overlay *ngIf="isDisplayOverlay"></app-overlay>

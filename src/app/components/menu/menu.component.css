@@ -1,0 +1,17 @@
+.menu-container{
+    position: fixed;
+    top:54px;
+    height: 150vw;
+    width: 150px;
+    z-index: 19;
+    left: 0%;
+    background-color:rgb(255, 255, 255) ;
+}
+.menu-option{
+    padding: 10%;
+    border-bottom: wheat 1px solid;
+}
+.menu-option:hover{
+    background: wheat;
+    cursor: pointer;
+}

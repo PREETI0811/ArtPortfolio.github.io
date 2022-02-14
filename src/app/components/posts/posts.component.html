@@ -1,0 +1,12 @@
+<div class="postsContainer">
+<div class="post-table-view" *ngIf="!hideTable" >
+<div class="post-row">
+<app-post  class="post"  *ngFor="let post of postsRow1" [post]="post" (isShowPostModalChanged)="hidePostTable($event)"></app-post>
+</div>
+<div class="post-row" >
+    <app-post  class="post"  *ngFor="let post of postsRow2" [post]="post" (isShowPostModalChanged)="hidePostTable($event)"></app-post>
+</div>
+</div>
+
+<app-post-modal *ngIf="hideTable" [post]="modalPost" (click)="showPostTable()"></app-post-modal>
+</div>

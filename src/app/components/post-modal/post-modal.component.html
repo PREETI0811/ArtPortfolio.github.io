@@ -1,0 +1,21 @@
+
+<div class="post-modal-container" >
+    <tr>
+        <th>
+
+    <img  *ngIf=isMediaImage() src="{{post.srcPath}}" class="post-modal-image"></th>
+    <video  *ngIf=isMediaVideo() autoplay  class="post-modal-image" >
+        <source src="{{post.srcPath}}" type="video/mp4">
+    </video>
+<th class="post-modal-text" >
+    <!-- <div class="post-modal-title">
+        {{post.title}}
+    </div> -->
+    <h1> {{post.title}}</h1>
+    <!-- <div class="post-modal-caption"> -->
+       <p class="post-text">{{post.text}}</p> 
+    <!-- </div> -->
+   
+</th>
+</tr>
+</div>

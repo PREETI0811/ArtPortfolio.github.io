@@ -1,0 +1,12 @@
+
+          <div  class="post-table-cell">
+            <img  *ngIf=isMediaImage() src="{{post.srcPath}}" class="post-image" (click)=onClick()>
+            <video  *ngIf=isMediaVideo()  autoplay class="post-image" (click)=onClick()>
+                <source src="{{post.srcPath}}" type="video/mp4">
+            </video>
+
+          </div>
+          <!-- <app-post-modal *ngIf="isShowPostModal" (click)=onClick() [post]="post" ></app-post-modal> -->
+         
+  
+
